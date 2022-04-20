@@ -17,7 +17,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     if (user) {
-        navigate('/home')
+        navigate('/about')
     }
 
     const handleSubmite = even => {
