@@ -14,7 +14,7 @@ const Service = ({ service }) => {
         <div className='service'>
             <img src={img} alt="" />
             <p>{name}</p>
-            <button onClick={() => navigateServiceDetails(id)}>Booking Now</button>
+            <button className='btn btn-primary' onClick={() => navigateServiceDetails(id)}>Booking Now</button>
         </div>
     );
 };

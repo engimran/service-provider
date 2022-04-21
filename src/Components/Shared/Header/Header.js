@@ -12,22 +12,25 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top' >
+        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky='top' >
             <Container>
-                <Navbar.Brand as={Link} to="/"><img height={50} src={Logo} alt="" /></Navbar.Brand>
+                <Navbar.Brand as={Link} to="/"><img height={50} src={Logo} alt="" /> <span className='fw-bold'>IMRAN PHOTOGRAPHAR</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="home#services">Services</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+
+
                     </Nav>
                     <Nav>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} to="home#services" className='text-white fw-bold'>Services</Nav.Link>
+                        <Nav.Link as={Link} to="/about" className='text-white fw-bold'>About</Nav.Link>
+                        <Nav.Link as={Link} to="/blogs" className='text-white fw-bold'>Blogs</Nav.Link>
+
                         {
                             user ?
-                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>SignOut</button>
+                                <button className='btn btn-link text-white fw-bold text-decoration-none' onClick={handleSignOut}>SignOut</button>
                                 :
-                                <Nav.Link as={Link} to="/login">
+                                <Nav.Link as={Link} to="/login" className='fw-bold text-white'>
                                     Login
                                 </Nav.Link>}
                     </Nav>

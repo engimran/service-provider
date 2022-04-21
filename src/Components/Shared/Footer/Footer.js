@@ -2,8 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
-            <p>footer part</p>
+        <footer className=''>
+            <p className='text-center fw-bolder text-primary'>See my Details Services</p>
+
         </footer>
 
 

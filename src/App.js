@@ -11,6 +11,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Login/Register/Register';
 import RequireAuth from './Components/Login/RequireAuith/RequireAuth';
 import CheckOut from './Components/CheckOut/CheckOut/CheckOut';
+import Blogs from './Components/Blogs/Blogs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
         <Route path='/Home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/checkout' element={
